@@ -1,2 +1,2 @@
-# chai-aur-code
+# journey-of-js
 practicing java script.
