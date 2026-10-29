@@ -19,13 +19,17 @@ console.log(Math.floor(Date.now())/1000); //1793278644.323
 
 let newDate = new Date();
 console.log(newDate); //2026-10-29T12:57:24.323Z
-console.log(newDate.getMonth+1); //function getMonth() { [native code] }1
-console.log(newDate.getDay()); //4
+console.log(newDate.getMonth()+1); //10
+console.log(newDate.getDay()); //4 (Thursday)
 `${newDate.getDay}`;
 
- newDate.toLocaleString(`default`, {
+ let consoleDay = newDate.toLocaleString('hi-IN', {
     weekday : "long"
  })
+ console.log(consoleDay); //गुरुवार
+ console.log(newDate.getFullYear()); //full year; eg: 2026
+ console.log(newDate.getMonth()); //month index
+ console.log(newDate.getDate());
 
  let dateDiff = myDate - myCreateDate;
 
