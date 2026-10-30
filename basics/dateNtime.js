@@ -34,3 +34,14 @@ console.log(newDate.getDay()); //4 (Thursday)
  let dateDiff = myDate - myCreateDate;
 
  console.log(Math.floor(dateDiff/(1000*60*60*24)));
+
+let d = new Date("invalid-date-string");
+
+console.log(typeof d); //object
+console.log(isNaN(d.getTime())); //true
+
+let orderDate = new Date("2026-10-28");
+
+orderDate.setDate(orderDate.getDate() + 7);
+
+console.log(orderDate.toISOString()); // 2026-11-04...
